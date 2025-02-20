@@ -1,4 +1,6 @@
-<div>
-    <h3>Backend Response:</h3>
-    <p id="backend-response">{{ backendData }}</p>
-  </div>
+<div class="riddle-container">
+  <h3>WELCOME 🤔</h3>
+  <p>CONGRATULATIONS FOR COMING HERE , CLICK THE BUTTON BELLOW</p>
+  <button (click)="showSolution()">Show Solution</button>
+  <p *ngIf="solutionVisible" class="solution">{{ backendData }}</p>
+</div>

@@ -1,124 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Container */
-  .container {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Header */
-  header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  header .subtitle {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    animation: slideIn 1.5s ease-in-out;
-  }
-  
-  /* Card */
-  .card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 30px 0;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    animation: float 3s infinite ease-in-out;
-  }
-  
-  .card .message {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  
-  #backend-response {
-    color: #ffdd57;
-    font-weight: 700;
-  }
-  
-  /* Footer */
-  footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2.5rem;
-    }
-  
-    .card .message {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    header .subtitle {
-      font-size: 1rem;
-    }
-  
-    .card .message {
-      font-size: 1rem;
-    }
-  }
+.riddle-container {
+  background: linear-gradient(135deg, #4CAF50, #2E8B57);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  margin: 20px auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #FFD700;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #FFC107;
+}
+
+.solution {
+  margin-top: 10px;
+  font-weight: normal;
+  color: #FFD700;
+}

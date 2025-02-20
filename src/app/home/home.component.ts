@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -28,5 +29,9 @@ export class HomeComponent {
         this.backendData = 'Failed to load data';
       }
     );
+  }
+  public solutionVisible:boolean=false
+  showSolution(): void {
+    this.solutionVisible = true;
   }
 }
